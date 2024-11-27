@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SLU Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="index.css"> <!-- Link to your CSS file -->
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+
+<body id="top">
+
+  </head>
+
+  <body>
+    <div class="sticky-header-wrapper">
+      <!-- Header content -->
+      <div class="masthead classic-header">
+        <header class="header-bar">
+          <div class="branding">
+            <a class="sticky-logo" href="#Home">
+              <img class="preload-me" src="https://www.slu.edu.ph/wp-content/uploads/2023/10/SLU-Logo-with-Text.png"
+                alt="Saint Louis University, Philippines">
+            </a>
+          </div>
+          <div class="mini-widgets right-widgets">
+            <a href="#" class="microwidget-btn" onclick="openModal('alumniModal')"><span>Alumni</span></a>
+            <span style="margin: 0 10px;"></span>
+            <a href="#" class="microwidget-btn" onclick="openModal('enrollmentModal')"><span>Enrollment</span></a>
+            <span style="margin: 0 10px;"></span>
+            <!-- <a href="#" class="search-icon" onclick="toggleSearchBox()"><i class="fas fa-search"></i></a> -->
+          </div>
+
+        </header>
+
+        <!-- Search Box -->
+        <!-- <div id="search-box" class="popup-search-wrap">
+          <form class="searchform mini-widget-searchform" method="get" action="https://www.slu.edu.ph/">
+            <input type="text" aria-label="Search" class="field searchform-s" name="s"
+              placeholder="Type and hit enter …">
+            <button type="submit" class="searchsubmit"><i class="fas fa-search"></i></button>
+          </form>
+        </div> -->
+
+        <!-- Navbar -->
+        <nav class="navigation">
+          <ul id="primary-menu" class="main-nav outside-item-remove-margin">
+            <li class="menu-item"><a href="#">Academics</a></li>
+            <li class="menu-item"><a href="#blog">News & Announcements</a></li>
+            <li class="menu-item"><a href="#about">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- <div class="landing-image"> -->
+    <!-- <div class="fancy-title-head hgroup">
+        <h1 class="fancy-title entry-title start-animation-done start-animation"><span>Basic Education Schools</span>
+        </h1>
+        <h2 class="fancy-subtitle start-animation-done start-animation"><span>Laboratory Elementary School: Upper
+            General Luna Road / Laboratory High School C.M Recto St. Navy Base 2600 Baguio City, Philippines</span></h2>
+      </div> -->
+
+    <video class="landing-video" preload="auto" loop autoplay muted>
+      <source src="https://www.slu.edu.ph/wp-content/uploads/2023/10/10-18-23_SLU-Website-Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="content-wrapper">
+      <div class="info-card sticky">
+        <h4>Saint Louis University Basic Education School</h4>
+        <p>Viewing the Junior High Department of Saint Louis University is a coeducational school for students at the
+          junior
+          high level. Empowering young minds with quality education.</p>
+      </div>
+
+      <div class="image-columns">
+        <div class="column">
+          <img src="https://www.slu.edu.ph/wp-content/uploads/2022/08/Guidance-Office-1200-%C3%97-600-px.png"
+            alt="Image 1">
+        </div>
+        <div class="column">
+          <img
+            src="https://www.slu.edu.ph/wp-content/uploads/2022/08/295825822_206413975147017_3861698180684492137_n-2.jpg"
+            alt="Image 2">
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Alumni Modal -->
+    <div id="alumniModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('alumniModal')">&times;</span>
+        <h2>Alumni Visit Form</h2>
+        <form>
+          <label for="alumni-name">Name:</label>
+          <input type="text" id="alumni-name" name="alumni-name" required>
+          <label for="alumni-email">Email:</label>
+          <input type="email" id="alumni-email" name="alumni-email" required>
+          <label for="alumni-date">Date of Visit:</label>
+          <input type="date" id="alumni-date" name="alumni-date" required>
+          <label for="alumni-message">Message:</label>
+          <textarea id="alumni-message" name="alumni-message" rows="4" cols="50"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Enrollment Modal -->
+    <div id="enrollmentModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('enrollmentModal')">&times;</span>
+        <h2>Enrollment</h2>
+        <h3>ON GOING SCHOOL</h3>
+        <h4>Basic Junior High School Requirements:</h4>
+        <ul>
+          <li>Completed Application Form</li>
+          <li>Birth Certificate (NSO/PSA Copy)</li>
+          <li>Report Card (Form 138)</li>
+          <li>Certificate of Good Moral Character</li>
+          <li>2x2 ID Picture (2 copies)</li>
+          <li>Entrance Exam Result</li>
+          <li>Medical Certificate</li>
+        </ul>
+        <h4>For Queries</h4>
+        <form>
+          <label for="contact-name">Name:</label>
+          <input type="text" id="contact-name" name="contact-name" required>
+          <label for="contact-email">Email:</label>
+          <input type="email" id="contact-email" name="contact-email" required>
+          <label for="contact-message">Message:</label>
+          <textarea id="contact-message" name="contact-message" rows="4" cols="50"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/slu.edu.ph" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="mailto:info@slu.edu.ph"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.google.com" target="_blank"><i class="fab fa-google"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 
+            - #STATE
+          -->
+
+    <!-- <section class="section stats" aria-label="stats"> -->
+    <div class="stats-carousel owl-carousel">
+      <div class="stats-card" style="--color: 170, 75%, 41%">
+        <h3 class="card-title">29.3k</h3>
+        <p class="card-text">Students Enrolled</p>
+      </div>
+      <div class="stats-card" style="--color: 351, 83%, 61%">
+        <h3 class="card-title">32.4K</h3>
+        <p class="card-text">Classes Completed</p>
+      </div>
+      <div class="stats-card" style="--color: 260, 100%, 67%">
+        <h3 class="card-title">100%</h3>
+        <p class="card-text">Satisfaction Rate</p>
+      </div>
+      <div class="stats-card" style="--color: 42, 94%, 55%">
+        <h3 class="card-title">354+</h3>
+        <p class="card-text">Top Instructors</p>
+      </div>
+      <div class="stats-card" style="--color: 200, 80%, 60%">
+        <h3 class="card-title">75+</h3>
+        <p class="card-text">Years of Excellence</p>
+      </div>
+      <div class="stats-card" style="--color: 120, 70%, 50%">
+        <h3 class="card-title">50+</h3>
+        <p class="card-text">Research Publications</p>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".stats-carousel").owlCarousel({
+          items: 4, // Display 4 items at a time
+          loop: true,
+          margin: 10,
+          nav: true,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1 // 1 item for small screens
+            },
+            600: {
+              items: 2 // 2 items for medium screens
+            },
+            1000: {
+              items: 4 // 4 items for large screens
+            }
+          }
+        });
+      });
+    </script>
+    <!-- </section> -->
+
+
+    <!-- 
+            - #CATEGORY
+          -->
+
+    <!-- <section class="section category" aria-label="category"> -->
+    <div class="container">
+      <p class="section-subtitle">Explore</p>
+      <h2 class="h2 section-title">
+        Learning Opportunities for <span class="span">Students</span>.
+      </h2>
+      <p class="section-text">
+        Discover various programs and activities to enhance your school experience.
+      </p>
+      <ul class="grid-list">
+        <li>
+          <div class="category-card" style="--color: 170, 75%, 41%">
+            <div class="card-icon">
+              <i class="fas fa-basketball-ball"></i>
+            </div>
+            <h3 class="h3">Sports Programs</h3>
+            <p class="card-text">
+              Join sports, and more to develop teamwork. Participate in competitions and enhance your athletic
+              skills. Engage in various sports activities to stay fit and healthy.
+            </p>
+            <span class="card-badge">5 Activities</span>
+          </div>
+        </li>
+        <li>
+          <div class="category-card" style="--color: 351, 83%, 61%">
+            <div class="card-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 class="h3">Arts & Music</h3>
+            <p class="card-text">
+              Enhance creativity with music, and workshops.
+              Join our art exhibitions and music recitals to showcase your talents.
+              Participate in collaborative projects to learn and grow with peers.
+            </p>
+            <span class="card-badge">6 Workshops</span>
+          </div>
+        </li>
+        <li>
+          <div class="category-card" style="--color: 229, 75%, 58%">
+            <div class="card-icon">
+              <i class="fas fa-flask"></i>
+            </div>
+            <h3 class="h3">Science Club</h3>
+            <p class="card-text">
+              Participate in exciting experiments, and science fairs. Enhance your knowledge and problem-solving
+              skills. Join our science club to explore the wonders of science and technology.
+            </p>
+            <span class="card-badge">3 Clubs</span>
+          </div>
+        </li>
+        <li>
+          <div class="category-card" style="--color: 42, 94%, 55%">
+            <div class="card-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="h3">Student Organizations</h3>
+            <p class="card-text">
+              Join clubs like debate, robotics, and leadership councils. Engage in community service and develop
+              and enhance your
+              leadership skills. Participate in various events and workshops to broaden your horizons and network
+              with peers.
+            </p>
+            <span class="card-badge">10 Clubs</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- </section> -->
+
+    <!-- </div> -->
+
+    <!-- <div id="sample_slider" class="owl-carousel sa_owl_theme autohide-arrows owl-loaded" data-slider-id="sample_slider"
+      style="visibility: visible;">
+      <div class="owl-stage-outer">
+        <div class="owl-stage" style="transition: 0.3s; width: 2928px;">
+          <div class="owl-item" style="width: 225.2px;">
+            <div id="sample_slider_slide01" class="sa_hover_container"
+              style="padding: 5%; margin: 0px 0%; background-color: rgb(255, 255, 255); min-height: 113px;">
+              <div class="sa_hover_buttons" style="top:50%; left:50%; margin-top:-20px; margin-left:-20px;">
+                <a class="sa_slide_link_icon"
+                  href="https://www.slu.edu.ph/2022/11/08/qs-world-university-rankings-2023-affirms-saint-louis-university-commitment-to-excellence-as-a-world-class-university/"
+                  target="_self" title="" aria-label=""></a>
+              </div>
+              <p><img decoding="async" class="alignnone size-medium wp-image-11285"
+                  src="https://www.slu.edu.ph/wp-content/uploads/2023/10/QS-Star-300x169.png" alt="" width="300"
+                  height="169"></p>
+            </div>
+          </div>
+           Repeat similar blocks for other slides -->
+    <!-- </div>
+      </div>
+      <div class="owl-nav">
+        <button type="button" role="presentation" class="owl-prev">Previous</button>
+        <button type="button" role="presentation" class="owl-next">Next</button>
+      </div>
+      <div class="owl-dots"></div>
+      <div class="owl-thumbs"></div>
+    </div> -->
+
+    <!-- 
+            - #HERO
+          -->
+
+    <section class="section hero" id="home" aria-label="home">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="https://www.slu.edu.ph/wp-content/uploads/2023/11/SDG-WHEEL-FINAL.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <main>
+      <article>
+
+        <!-- 
+            - #BLOG
+          -->
+
+        <section class="section blog has-bg-image" id="blog" aria-label="blog"
+          style="background-image: url('./assets/images/blog-bg.svg')">
+          <div class="container">
+
+            <p class="section-subtitle">Latest Articles</p>
+
+            <h2 class="h2 section-title">Get News With SLU BEDS</h2>
+
+            <ul class="grid-list">
+
+              <li>
+                <div class="blog-card">
+
+                  <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                    <img src="https://www.slu.edu.ph/wp-content/uploads/2024/11/Untitled-design-1-1920x960.png"
+                      width="370" height="370" loading="lazy"
+                      alt="Campus Press Dispatches: A Convergence of Louisian Student Publications" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-btn" aria-label="read more">
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+
+                    <a href="#" class="card-subtitle">Online</a>
+
+                    <h3 class="h4">
+                      <a href="#" class="card-title">Campus Press Dispatches: A Convergence of Louisian Student
+                        Publications</a>
+                    </h3>
+
+                    <ul class="card-meta-list">
+
+                      <li class="card-meta-item">
+                        <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">November 23, 2024</span>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">Com 09</span>
+                      </li>
+
+                    </ul>
+
+                    <p class="card-text">
+                      The University Information Office (UIO) of Saint Louis University (SLU) is set to host the
+                      first-ever school publications convergence titled, “Campus Press Dispatches: A Convergence of
+                      Louisian Student Publications” on 26 November 2024 at the Fr. Francis Gevers Hall, Main Campus,
+                      SLU.
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+
+                  <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                    <img src="https://www.slu.edu.ph/wp-content/uploads/2024/04/SIHAY-2024-1200x600.png" width="370"
+                      height="370" loading="lazy" alt="Become A Better Blogger: Content Planning" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-btn" aria-label="read more">
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+
+                    <a href="#" class="card-subtitle">Online</a>
+
+                    <h3 class="h4">
+                      <a href="#" class="card-title">SLU BEDS Team goes head-to-head with Science Schools in the SIHAY
+                        National Biology Olympiad 2024</a>
+                    </h3>
+
+                    <ul class="card-meta-list">
+
+                      <li class="card-meta-item">
+                        <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">4 Hours Ago</span>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">Com 09</span>
+                      </li>
+
+                    </ul>
+
+                    <p class="card-text">
+                      Seven Louisian students showcased their intellectual rigor in the recently held SIHAY National
+                      Biology Olympiad at the University of the Philippines Los Banos, Laguna, Philippines, from 13-14
+                      April 2024, as SLU BEdS team ranked 15th among 40...
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+
+                  <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
+                    <img src="https://www.slu.edu.ph/wp-content/uploads/2023/03/SEAMEO-1-1550x775.png" width="370"
+                      height="370" loading="lazy" alt="Become A Better Blogger: Content Planning" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-btn" aria-label="read more">
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+
+                    <a href="#" class="card-subtitle">Online</a>
+
+                    <h3 class="h4">
+                      <a href="#" class="card-title">SLU-BEdS Reps Finish as Best Completers in the 2nd SEAMEO Science
+                        Olympiad</a>
+                    </h3>
+
+                    <ul class="card-meta-list">
+
+                      <li class="card-meta-item">
+                        <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">Yesterday</span>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">Com 09</span>
+                      </li>
+
+                    </ul>
+
+                    <p class="card-text">
+                      Saint Louis University-Basic Education School (SLU-BEdS) participants snatched the Best Completer
+                      Finisher Award during the second edition of the SEAMEO Science Olympiad (SEASO) hosted by the
+                      Southeast Asian Ministers of Education Organization Regional Centre for Education...
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <img src="./assets/images/blog-shape.png" width="186" height="186" loading="lazy" alt=""
+              class="shape blog-shape">
+
+          </div>
+        </section>
+
+
+
+
+        <!-- 
+            - #ABOUT
+          -->
+
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+            <!-- About Us Section with Two Columns -->
+            <div class="about-flex-container">
+              <figure class="about-banner">
+                <p class="section-subtitle">About Us</p>
+                <!-- <h2 class="h2 section-title">Saint Louis University Basic Education School</h2> -->
+                <div class="slideshow-container">
+                  <div class="slide">
+                    <img src="./assets/images/about1.jpg" width="520" height="370" loading="lazy" alt="about banner"
+                      class="img-cover">
+                    <button class="slide-button prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="slide-button next" onclick="changeSlide(1)">&#10095;</button>
+                  </div>
+                  <div class="slide">
+                    <img src="./assets/images/about2.jpg" alt="About Image 2" class="img-cover">
+                    <button class="slide-button prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="slide-button next" onclick="changeSlide(1)">&#10095;</button>
+                  </div>
+                  <div class="slide">
+                    <img src="./assets/images/about3.jpg" alt="About Image 3" class="img-cover">
+                    <button class="slide-button prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="slide-button next" onclick="changeSlide(1)">&#10095;</button>
+                  </div>
+                </div>
+              </figure>
+
+              <div class="about-content">
+                <h2 class="h2 section-title">Saint Louis University Basic Education School</h2>
+                <p class="section-text">
+                  Saint Louis University Basic Education School is the unification of the basic education school units
+                  of Saint Louis University,
+                  a private, Roman Catholic, CICM university located in Baguio City, Philippines. The high school
+                  department was originally
+                  located at the Gonzaga campus but has since been moved to the Navy Base campus since early 2000s. On
+                  the other hand,
+                  the elementary department is located at the Gonzaga Campus on General Luna Road.
+                </p>
+              </div>
+            </div>
+
+            <!-- Junior High Department Section -->
+            <div class="about-container">
+              <h3 class="section-title">Junior High Department</h3>
+              <p class="section-text">
+                The Junior High Department of Saint Louis University is a coeducational school for students at the
+                junior high level. It was
+                originally established in 1921 as the Saint Louis University Boys' High School and was only for male
+                students. The school's
+                first graduates completed their studies in 1929. In 2003, the school became coeducational, accepting
+                male and female students.
+              </p>
+              <p class="section-text">
+                The Junior High Department is located at the Navy Base campus, along with the Senior High Department.
+                The two departments
+                were formerly separately administered but are now unified due to the merging of the Elementary and High
+                School departments.
+                This separation was implemented following the implementation of the K-12 program in the Philippines,
+                which added two years
+                to the country's basic education system.
+              </p>
+              <p class="section-text">
+                As a coeducational junior high school, the Junior High Department at SLU offers various academic and
+                extracurricular programs
+                and activities to help students grow and learn.
+              </p>
+            </div>
+          </div>
+
+          <div class="vision-mission-container">
+            <div
+              class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+              <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
+                <h2 class="has-text-align-right wp-block-heading">Vision – Mission<br>Statement</h2>
+              </div>
+
+              <div class="vertical-divider"></div>
+
+              <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:44.44%">
+                <blockquote class="wp-block-quote has-x-large-font-size is-layout-flow wp-block-quote-is-layout-flow">
+                  <p><br></p>
+                  <p><strong><em><mark style="background-color:rgba(0, 0, 0, 0)"
+                          class="has-inline-color has-dark-gray-color">We envision as an excellent missionary and
+                          transformative educational institution zealous in developing locally responsive, globally
+                          competitive, and empowered human resources who are creative, competent, socially involved, and
+                          imbued with Christian spirit.</mark></em></strong></p>
+                  <p><br></p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="vision-mission-container">
+            <div
+              class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+              <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
+                <h2 class="has-text-align-right wp-block-heading">Quality Policy
+                  <br>Statement
+                </h2>
+              </div>
+
+              <div class="vertical-divider"></div>
+
+              <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:44.44%">
+                <blockquote class="wp-block-quote has-x-large-font-size is-layout-flow wp-block-quote-is-layout-flow">
+                  <p><br></p>
+                  <p><strong><em><mark style="background-color:rgba(0, 0, 0, 0)"
+                          class="has-inline-color has-dark-gray-color">We are committed to developing locally
+                          responsive,
+                          globally competitive, and empowered human resources who are creative, competent, socially
+                          involved,
+                          and imbued with Christian spirit.
+
+                          We, in partnership with our stakeholders, are committed to continually improving the
+                          effectiveness
+                          of our quality management system in meeting all applicable requirements towards the utmost
+                          satisfaction of our valued customers.</mark></em></strong></p>
+                  <p><br></p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-container">
+            <!-- First Row -->
+            <a href="#" class="box" onclick="openLightbox(0); return false;">
+                <img src="https://www.slu.edu.ph/wp-content/uploads/2024/11/SHMC-PHAPi-2-1200x600.png" alt="Gallery Image 1">
+                <div class="icon"> <i class="fas fa-plus"></i></div>
+            </a>
+            <a href="#" class="box" onclick="openLightbox(1); return false;">
+                <img src="https://www.slu.edu.ph/wp-content/uploads/2024/11/Campus-Press-Convergence-1200x600.png" alt="Gallery Image 2">
+                <div class="icon"> <i class="fas fa-plus"></i></div>
+            </a>
+            <a href="#" class="box" onclick="openLightbox(2); return false;">
+                <img src="https://www.slu.edu.ph/wp-content/uploads/2024/11/BMMA-1200x600.png" alt="Gallery Image 3">
+                <div class="icon"> <i class="fas fa-plus"></i></div>
+            </a>
+            <a href="#" class="box" onclick="openLightbox(3); return false;">
+                <img src="https://www.slu.edu.ph/wp-content/uploads/2023/08/DOST-SEI-TRAINING-1-1-1200x600.png" alt="Gallery Image 4">
+                <div class="icon"> <i class="fas fa-plus"></i></div>
+            </a>
+            <!-- Second Row -->
+            <a href="#" class="box" onclick="openLightbox(4); return false;">
+                <img src="https://www.slu.edu.ph/wp-content/uploads/2024/11/11-25-24_Cheers-SL-Launch-EP-4-942x628.jpg" alt="Gallery Image 5">
+                <div class="icon"> <i class="fas fa-plus"></i></div>
+            </a>
+            <a href="#" class="box" onclick="openLightbox(5); return false;">
+                <img src="https://www.slu.edu.ph/wp-content/uploads/2024/05/Gizmos-Global-STEM-Competition-1200x600.png" alt="Gallery Image 6">
+                <div class="icon"> <i class="fas fa-plus"></i></div>
+            </a>
+            <a href="#" class="box" onclick="openLightbox(6); return false;">
+                <img src="https://www.slu.edu.ph/wp-content/uploads/2024/05/20170111232503_IMG_5103-1-942x628.jpg" alt="Gallery Image 7">
+                <div class="icon"> <i class="fas fa-plus"></i></div>
+            </a>
+            <a href="#" class="box" onclick="openLightbox(7); return false;">
+                <img src="https://www.slu.edu.ph/wp-content/uploads/2023/10/TSAB-1-777x388.png" alt="Gallery Image 8">
+                <div class="icon"> <i class="fas fa-plus"></i></div>
+            </a>
+        </div>
+        
+        <!-- Lightbox Container -->
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-content" id="lightbox-image">
+            <a class="prev" onclick="changeImage(-1); return false;">&#10094;</a>
+            <a class="next" onclick="changeImage(1); return false;">&#10095;</a>
+        </div>
+        
+        <script>
+        const images = [
+            "https://www.slu.edu.ph/wp-content/uploads/2024/11/SHMC-PHAPi-2-1200x600.png",
+            "https://www.slu.edu.ph/wp-content/uploads/2024/11/Campus-Press-Convergence-1200x600.png",
+            "https://www.slu.edu.ph/wp-content/uploads/2024/11/BMMA-1200x600.png",
+            "https://www.slu.edu.ph/wp-content/uploads/2023/08/DOST-SEI-TRAINING-1-1-1200x600.png",
+            "https://www.slu.edu.ph/wp-content/uploads/2024/11/11-25-24_Cheers-SL-Launch-EP-4-942x628.jpg",
+            "https://www.slu.edu.ph/wp-content/uploads/2024/05/Gizmos-Global-STEM-Competition-1200x600.png",
+            "https://www.slu.edu.ph/wp-content/uploads/2024/05/20170111232503_IMG_5103-1-942x628.jpg",
+            "https://www.slu.edu.ph/wp-content/uploads/2023/10/TSAB-1-777x388.png"
+        ];
+        
+        let currentImageIndex = 0;
+        
+        function openLightbox(index) {
+            currentImageIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            lightbox.style.display = 'flex';
+            lightboxImage.src = images[currentImageIndex];
+        }
+        
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+        }
+        
+        function changeImage(direction) {
+            currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
+            const lightboxImage = document.getElementById('lightbox-image');
+            lightboxImage.src = images[currentImageIndex];
+        }
+        </script>
+
+          <!-- School Location Section -->
+          <div class="about-container">
+            <h3 class="section-title" style="display: flex; justify-content: center;">Our Location</h3>
+            <div class="map-container">
+              <iframe src="https://maps.google.com/maps?q=Saint%20Louis%20University%20Basic%20Education%20School&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <script>
+            document.querySelector('.map-container iframe').addEventListener('click', function() {
+              window.open(this.src, '_blank');
+            });
+          </script>
+
+        </section>
+
+
+        <!-- gallery section starts -->
+
+
+
+
+
+
+
+        <!-- 
+            - #Video
+          -->
+        <!-- <section class="video has-bg-image" aria-label="video">
+          <div class="container">
+            <div class="video-card"> -->
+        <!-- Video Element -->
+        <!-- <div class="video-banner img-holder">
+                <video id="sluVideo" width="990" height="570" class="video-element" preload="metadata"
+                  poster="./assets/images/video-placeholder.jpg">
+                  <source src="./assets/images/SLU-Vid.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video> -->
+
+        <!-- Play/Pause Button -->
+        <!-- <button class="play-btn" id="playPauseBtn" aria-label="play video" onclick="togglePlayPause()">
+                  <ion-icon name="play" aria-hidden="true" id="playIcon"></ion-icon>
+                </button>
+              </div> -->
+
+        <!-- Decorative Shapes -->
+        <!-- <img src="./assets/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt=""
+                class="shape video-shape-1">
+              <img src="./assets/images/video-shape-2.png" width="158" height="174" loading="lazy" alt=""
+                class="shape video-shape-2">
+            </div>
+          </div>
+        </section> -->
+
+
+
+
+
+
+      </article>
+
+      <!-- New Section: Apply and Enrol Now -->
+      <section class="apply-enrol-section">
+        <div class="container">
+          <div class="wp-block-columns is-layout-flex">
+            <!-- Image on the Left -->
+            <div class="wp-block-column" style="flex-basis: 33.33%;">
+              <div class="wp-block-image">
+                <figure class="aligncenter size-large">
+                  <img src="https://www.slu.edu.ph/wp-content/uploads/2024/05/BEdS-Admission-444x628.jpg"
+                    alt="BEdS Admission" width="444" height="628">
+                </figure>
+              </div>
+            </div>
+            <div class="content">
+              <h2>APPLY and ENROL NOW!⭐️</h2>
+              <p>✅ APPLICATION for ADMISSION to the SLU Basic Education School (Elementary, Junior High, and Senior
+                High) AY 2024-2025 is NOW OPEN!
+                Kindly scan the QR code assigned for each school attached in the poster. You may also click the
+                following links for the guidelines:</p>
+
+              <ul>
+                <li>
+                  ⭐ <strong>Elementary Department Application</strong> –
+                  <a href="http://bit.ly/3U9gkkz" target="_blank">http://bit.ly/3U9gkkz</a>
+                </li>
+                <li>
+                  ⭐ <strong>Junior High School Department</strong>
+                  Incoming Grade 7 and Transferees <br>
+                  <a href="https://bit.ly/3UbkNUc" target="_blank">https://bit.ly/3UbkNUc</a>
+                </li>
+                <li>
+                  ⭐ <strong>Senior High School Department</strong>
+                  Incoming Grade 11 –
+                  <a href="https://bit.ly/3U9GlAp" target="_blank">https://bit.ly/3U9GlAp</a>
+                </li>
+              </ul>
+
+              <p>For more details and further announcements, follow us through the following Facebook pages:</p>
+              <ul>
+                <li>Elementary Department – <a href="https://www.facebook.com/SLU.LaboratoryElementarySchool</a></li>
+              <li>Junior High Department – <a href="
+                    https://www.facebook.com/SLU.LJHS" "_blank">https://www.facebook.com/SLUtarget=.LJ</a></li>
+                <li>Senior High Department – <a href="https://www.facebook.com/SLU.LSHS"
+                    target="_blank">https://www.facebook.com/SLU.LSHS</a></li>
+              </ul>
+
+              <p>Dito sa BEdS, Ikaw ang the best!👍⭐️
+              <p>See you all this academic year 2024-2025 mga Ka-BEdS!</p>
+              <p>#ChooseSLUBEdS</p>
+              <p>#BethebestBIDABEdS</p>
+            </div>
+          </div>
+      </section>
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <!-- 
+        - #FOOTER
+      -->
+
+    <footer class="footer" style="background-image: linear-gradient(to bottom, #004186, #44576b)">
+
+      <div class="footer-top section">
+        <div class="container grid-list">
+
+          <div class="footer-brand">
+
+            <a href="#" class="logo">
+              <img src="https://www.slu.edu.ph/wp-content/uploads/2023/10/EDITED-FOOTER.png" width="562" height="100"
+                alt="EduWeb logo">
+
+
+              <!-- <p class="footer-brand-text">
+              Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor incidid unt labore dolore.
+            </p>
+
+            <div class="wrapper">
+              <span class="span">Add:</span>
+
+              <address class="address">70-80 Upper St Norwich NR2</address>
+            </div>
+
+            <div class="wrapper">
+              <span class="span">Call:</span>
+
+              <a href="tel:+011234567890" class="footer-link">+01 123 4567 890</a>
+            </div>
+
+            <div class="wrapper">
+              <span class="span">Email:</span>
+
+              <a href="mailto:info@eduweb.com" class="footer-link">info@eduweb.com</a>
+            </div> -->
+
+          </div>
+
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Inquiries</p>
+
+            <p class="footer-list-text">
+              Enter your email address to inquire about our school programs and offerings.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+              <button type="submit" class="btn has-before">
+                <span class="span">Enroll Now</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+    </footer>
+
+
+
+
+
+    <!-- 
+        - #BACK TO TOP
+      -->
+
+    <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
+
+
+
+    <!-- 
+        - custom js link
+      -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+        - ionicon link
+      -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- lightgallery cdn js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+    <script>
+
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = 'block';
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = 'none';
+}
+
+      // $(document).ready(function () {
+      //   $("#sample_slider").owlCarousel({
+      //     items: 1, // Number of items to display
+      //     loop: true,
+      //     margin: 10,
+      //     nav: true,
+      //     dots: true,
+      //     autoplay: true,
+      //     autoplayTimeout: 3000,
+      //     autoplayHoverPause: true
+      //   });
+      // });
+
+
+      <!-- JavaScript to Handle Video Playback -->
+
+      function togglePlayPause() {
+        const video = document.getElementById("sluVideo");
+        const playIcon = document.getElementById("playIcon");
+        const playPauseBtn = document.getElementById("playPauseBtn");
+
+        if (video.paused) {
+          video.play();
+          playIcon.setAttribute("name", "pause"); // Change icon to pause
+        } else {
+          video.pause();
+          playIcon.setAttribute("name", "play"); // Change icon back to play
+        }
+      }
+
+      //       document.addEventListener('DOMContentLoaded', function() {
+      //   let currentIndex = 0;
+      //   const images = document.querySelectorAll('.image-container img');
+      //   images[currentIndex].classList.add('active');
+
+      //   setInterval(() => {
+      //     images[currentIndex].classList.remove('active');
+      //     currentIndex = (currentIndex + 1) % images.length;
+      //     images[currentIndex].classList.add('active');
+      //   }, 3000); // Change image every 3 seconds
+      // });
+
+      let slideIndex = 0;
+      showSlides(slideIndex);
+
+      function changeSlide(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function showSlides(n) {
+        let slides = document.getElementsByClassName("slide");
+        if (n >= slides.length) { slideIndex = 0 }
+        if (n < 0) { slideIndex = slides.length - 1 } for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"
+            ;
+        } slides[slideIndex].style.display = "block";
+      } function toggleSearchBox() {
+        var
+          searchBox = document.getElementById('search-box'); if (searchBox.style.visibility === 'hidden' ||
+            searchBox.style.visibility === '') { searchBox.style.visibility = 'visible'; searchBox.style.opacity = '1'; } else {
+          searchBox.style.visibility = 'hidden'; searchBox.style.opacity = '0';
+        }
+      } function openModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+      } function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+
+      } </script>
+  </body>
+
+</html>
